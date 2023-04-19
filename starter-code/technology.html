@@ -15,55 +15,58 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body class="tech-page">
-    <nav class="nav">
-      <img src="./assets/shared/logo.svg" alt="logo" class="logo" />
-      <button
-        class="navToggle-btn"
-        id="navToggle-btn"
-        aria-controls="navlist"
-        aria-expanded="false"
-      ></button>
-      <div class="navbar">
-        <ul class="navlist">
-          <a href="index.html">
-            <li
-              class="uppercase ff-sans-cond letter-spacing-3"
-              aria-selected="false"
-            >
-              <span class="text-white sr-only" aria-hidden="true">00</span> home
-            </li>
-          </a>
-          <a href="destination.html">
-            <li
-              class="uppercase ff-sans-cond letter-spacing-3"
-              aria-selected="false"
-            >
-              <span class="text-white sr-only" aria-hidden="true">01</span>
-              destination
-            </li>
-          </a>
-          <a href="crew.html">
-            <li
-              class="uppercase ff-sans-cond letter-spacing-3"
-              aria-selected="false"
-            >
-              <span class="text-white sr-only" aria-hidden="true">02</span> Crew
-            </li>
-          </a>
-          <a href="technology.html">
-            <li
-              class="uppercase ff-sans-cond letter-spacing-3"
-              aria-selected="true"
-            >
-              <span class="text-white sr-only" aria-hidden="true">03</span>
-              Technology
-            </li>
-          </a>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <h1 class="numbered-title"><span>03</span>space launch 101</h1>
+    <a class="skip-to-content" href="#technology">Skip to content</a>
+    <header class="nav">
+        <img src="./assets/shared/logo.svg" alt="logo" class="logo" />
+        <button
+          class="navToggle-btn"
+          id="navToggle-btn"
+          aria-controls="navlist"
+          aria-expanded="false"
+        >
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+        <nav class="navbar">
+          <ul class="navlist" data-visible="false">
+            <a href="index.html">
+              <li
+                class="uppercase ff-sans-cond letter-spacing-3"
+                aria-selected="false"
+              >
+                <span class="text-white" aria-hidden="true">00</span> home
+              </li>
+            </a>
+            <a href="destination.html">
+              <li
+                class="uppercase ff-sans-cond letter-spacing-3"
+                aria-selected="false"
+              >
+                <span class="text-white" aria-hidden="true">01</span>
+                destination
+              </li>
+            </a>
+            <a href="crew.html">
+              <li
+                class="uppercase ff-sans-cond letter-spacing-3"
+                aria-selected="false"
+              >
+                <span class="text-white" aria-hidden="true">02</span> Crew
+              </li>
+            </a>
+            <a href="technology.html">
+              <li
+                class="uppercase ff-sans-cond letter-spacing-3"
+                aria-selected="true"
+              >
+                <span class="text-white" aria-hidden="true">03</span>
+                Technology
+              </li>
+            </a>
+          </ul>
+      </nav>
+    </header>
+    <main id="technology">
+      <h1 class="numbered-title"><span aria-hidden="true">03</span>space launch 101</h1>
       <section class="tech">
         <section class="tech-image-container">
           <picture class="tech-pic">
@@ -79,7 +82,7 @@
         </section>
         <section class="tech-container">
           <article class="tech-desc">
-            <ul class="tech-tabs">
+            <ul class="tech-tabs" aria-label="technology list">
               <li class="uppercase ff-serif fs-400" aria-selected="true">1</li>
               <li class="uppercase ff-serif fs-400" aria-selected="false">2</li>
               <li class="uppercase ff-serif fs-400" aria-selected="false">3</li>

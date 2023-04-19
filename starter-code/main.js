@@ -5,8 +5,12 @@ const navlist = document.querySelector('.navlist')
 
 //add function that toggles the nsv menu
 navToggle.addEventListener('click', () => {
-    navlist.classList.toggle('showbar')
-    navToggle.classList.toggle('close-nav')
+    if (navlist.dataset.visible == 'true') {
+        navlist.dataset.visible = 'false'
+    } else {
+        navlist.dataset.visible = 'true'
+    }
+    
     if (navToggle.ariaExpanded == "true") {
         navToggle.ariaExpanded = "false"
         return

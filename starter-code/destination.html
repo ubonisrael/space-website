@@ -15,54 +15,56 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body class="destination-page">
-    <nav class="nav">
-      <img src="./assets/shared/logo.svg" alt="logo" class="logo" />
-      <button
-        class="navToggle-btn"
-        id="navToggle-btn"
-        aria-controls="navlist"
-        aria-expanded="false"
-      ></button>
-      <div class="navbar">
-        <ul class="navlist">
-          <a href="index.html">
-            <li
-            class="uppercase ff-sans-cond letter-spacing-3"
-            aria-selected="false"
-          >
-            <span class="text-white sr-only" aria-hidden="true">00</span> home
-          </li>
-          </a>
-          <a href="destination.html">
-            <li
-            class="uppercase ff-sans-cond letter-spacing-3"
-            aria-selected="true"
-          >
-            <span class="text-white sr-only" aria-hidden="true">01</span> destination
-          </li>
-          </a>
-          <a href="crew.html">
-            <li
-            class="uppercase ff-sans-cond letter-spacing-3"
-            aria-selected="false"
-          >
-            <span class="text-white sr-only" aria-hidden="true">02</span> Crew
-          </li>
-          </a>
-          <a href="technology.html">
-            <li
-            class="uppercase ff-sans-cond letter-spacing-3"
-            aria-selected="false"
-          >
-            <span class="text-white sr-only" aria-hidden="true">03</span> Technology
-          </li>
-          </a>
-        </ul>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <h1 class="numbered-title"><span>01</span>Pick your destination</h1>
+    <a class="skip-to-content" href="#destination">Skip to content</a>
+    <header class="nav">
+        <img src="./assets/shared/logo.svg" alt="logo" class="logo" />
+        <button
+          class="navToggle-btn"
+          id="navToggle-btn"
+          aria-controls="navlist"
+          aria-expanded="false"
+        >
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+        <nav class="navbar">
+          <ul class="navlist" data-visible="false">
+            <a href="index.html">
+              <li
+              class="uppercase ff-sans-cond letter-spacing-3"
+              aria-selected="false"
+            >
+              <span class="text-white" aria-hidden="true">00</span> home
+            </li>
+            </a>
+            <a href="destination.html">
+              <li
+              class="uppercase ff-sans-cond letter-spacing-3"
+              aria-selected="true"
+            >
+              <span class="text-white" aria-hidden="true">01</span> destination
+            </li>
+            </a>
+            <a href="crew.html">
+              <li
+              class="uppercase ff-sans-cond letter-spacing-3"
+              aria-selected="false"
+            >
+              <span class="text-white" aria-hidden="true">02</span> Crew
+            </li>
+            </a>
+            <a href="technology.html">
+              <li
+              class="uppercase ff-sans-cond letter-spacing-3"
+              aria-selected="false"
+            >
+              <span class="text-white" aria-hidden="true">03</span> Technology
+            </li>
+            </a>
+          </ul>
+      </nav>
+    </header>
+    <main id="destination">
+      <h1 class="numbered-title"><span aria-hidden="true">01</span>Pick your destination</h1>
       <section class="destination">
         <picture class="destination-pic">
           <source
@@ -73,7 +75,7 @@
         </picture>
         <section class="destinations-container">
           <article class="destination-desc">
-            <ul class="destination-tabs">
+            <ul class="destination-tabs" aria-label="destination list">
               <li
                 class="uppercase text-accent letter-spacing-2 ff-sans-cond fs-400"
                 aria-selected="true"
