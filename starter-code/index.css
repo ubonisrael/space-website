@@ -349,10 +349,6 @@ a {
   aspect-ratio: 1;
 }
 
-/* .navbar {
-  display: block;
-} */
-
 .navToggle-btn {
   position: absolute;
   top: 0;
@@ -367,7 +363,7 @@ a {
   z-index: 99;
 }
 
-.close-nav {
+.navToggle-btn[aria-expanded="true"] {
   background-image: url("assets/shared/icon-close.svg");
 }
 
