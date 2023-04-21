@@ -43,6 +43,8 @@ function setDestination(dest) {
       "alt",
       destinations[dest].name
     );
+    destinationImage.classList.add('fade')
+    destinationImage.onanimationend = () => destinationImage.classList.remove('fade')
 
     destinationTitle.textContent = destinations[dest].name;
 
@@ -53,5 +55,16 @@ function setDestination(dest) {
 
     destinationTravelTime.firstElementChild.textContent =
       destinations[dest].travel;
+
+    destinationTitle.classList.add('slide')
+    destinationParagraph.classList.add('slide')
+    destinationAvgDistance.classList.add('slide')
+    destinationTravelTime.classList.add('slide')
+
+    destinationTitle.onanimationend = () => destinationTitle.classList.remove('slide')
+    destinationParagraph.onanimationend = () => destinationParagraph.classList.remove('slide')
+    destinationAvgDistance.onanimationend = () => destinationAvgDistance.classList.remove('slide')
+    destinationTravelTime.onanimationend = () => destinationTravelTime.classList.remove('slide')
+  
   });
 }

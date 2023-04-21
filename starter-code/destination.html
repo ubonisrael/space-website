@@ -24,43 +24,39 @@
           aria-controls="navlist"
           aria-expanded="false"
         >
-        <span class="sr-only" aria-expanded="false">Menu</span>
+        <span class="sr-only" aria-expanded="false" role="menu">Menu</span>
       </button>
-        <nav class="navbar">
-          <ul class="navlist" data-visible="false">
-            <a href="index.html">
-              <li
-              class="uppercase ff-sans-cond letter-spacing-3"
-              aria-selected="false"
-            >
-              <span class="text-white" aria-hidden="true">00</span> home
-            </li>
-            </a>
-            <a href="destination.html">
-              <li
-              class="uppercase ff-sans-cond letter-spacing-3"
-              aria-selected="true"
-            >
-              <span class="text-white" aria-hidden="true">01</span> destination
-            </li>
-            </a>
-            <a href="crew.html">
-              <li
-              class="uppercase ff-sans-cond letter-spacing-3"
-              aria-selected="false"
-            >
-              <span class="text-white" aria-hidden="true">02</span> Crew
-            </li>
-            </a>
-            <a href="technology.html">
-              <li
-              class="uppercase ff-sans-cond letter-spacing-3"
-              aria-selected="false"
-            >
-              <span class="text-white" aria-hidden="true">03</span> Technology
-            </li>
-            </a>
-          </ul>
+      <nav class="navbar">
+        <ul class="navlist" id="navlist" data-visible="false">
+          <li
+            class="uppercase ff-sans-cond letter-spacing-3"
+            data-selected="false"
+          >
+            <span class="text-white" aria-hidden="true">00</span>
+            <a href="index.html"> home</a>
+          </li>
+          <li
+            class="uppercase ff-sans-cond letter-spacing-3"
+            data-selected="true"
+          >
+            <span class="text-white" aria-hidden="true">01</span>
+            <a href="destination.html"> destination</a>
+          </li>
+          <li
+            class="uppercase ff-sans-cond letter-spacing-3"
+            data-selected="false"
+          >
+            <span class="text-white" aria-hidden="true">02</span>
+            <a href="crew.html"> Crew</a>
+          </li>
+          <li
+            class="uppercase ff-sans-cond letter-spacing-3"
+            data-selected="false"
+          >
+            <span class="text-white" aria-hidden="true">03</span>
+            <a href="technology.html"> Technology</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main id="destination">

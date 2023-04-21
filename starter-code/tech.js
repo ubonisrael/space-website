@@ -2,6 +2,7 @@ const techImage = document.querySelector(".tech-pic");
 const techTabs = document.querySelector(".tech-tabs");
 const techTitle = document.getElementsByTagName("h2")[0];
 const techParagraph = document.querySelector(".paragraph");
+const techtype = document.querySelector('.tech-type')
 
 async function fetchData(url) {
   return (data = await fetch(url).then((data) => data.json()));
@@ -40,8 +41,14 @@ function setTech(num) {
       technology[num].name
     );
 
+    techImage.classList.add('fade')
+    techImage.onanimationend = () => techImage.classList.remove('fade')
+
     techTitle.innerHTML = `<span>The terminology...</span>${technology[num].name}`;
 
     techParagraph.textContent = technology[num].description;
+
+    techtype.classList.add('slide')
+    techtype.onanimationend = () => techImage.classList.remove('slide')
   });
 }
