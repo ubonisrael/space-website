@@ -49,6 +49,6 @@ function setTech(num) {
     techParagraph.textContent = technology[num].description;
 
     techtype.classList.add('slide')
-    techtype.onanimationend = () => techImage.classList.remove('slide')
+    techtype.onanimationend = () => techtype.classList.remove('slide')
   });
 }
